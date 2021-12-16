@@ -1285,15 +1285,10 @@ section {
   color: #9eccf4;
 }
 
-/*----  Main Style  ----*/
-#cards_landscape_wrap-2{
-  text-align: center;
-  background: #F7F7F7;
-}
-#cards_landscape_wrap-2 .container{
+/* #cards_landscape_wrap-2 .container{
   padding-top: 80px; 
   padding-bottom: 100px;
-}
+} */
 #cards_landscape_wrap-2 a{
   text-decoration: none;
   outline: none;
@@ -1322,9 +1317,7 @@ section {
   -o-transform:scale(1.15);
   transform:scale(1.15);
 }
-#cards_landscape_wrap-2 .card-flyer .text-box{
-  text-align: center;
-}
+
 #cards_landscape_wrap-2 .card-flyer .text-box .text-container{
   padding: 30px 18px;
 }

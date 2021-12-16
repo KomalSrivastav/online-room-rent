@@ -1,236 +1,273 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Mamba Bootstrap Template - Index</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i,900" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <title></title>
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <style>
+  .search-sec{
+    padding: 2rem;
+}
+.search-slt{
+    display: block;
+    width: 100%;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    height: calc(3rem + 2px) !important;
+    border-radius:0;
+}
+.wrn-btn{
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    height: calc(3rem + 2px) !important;
+    border-radius:0;
+}
+
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 100%;
+  left: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content .header {
+  background: red;
+  padding: 16px;
+  color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  background-color: #ccc;
+  height: 250px;
+}
+
+.column a {
+  float: none;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.column a:hover {
+  background-color: #ddd;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    height: auto;
+  }
+}
+  </style>
 </head>
 
 <body>
-  <!-- ======= Header ======= -->
-  <header id="header" class="d-flex align-items-center">
-    <div class="container d-flex align-items-center">
-
-      <div class="logo me-auto">
-        <h1><a href="index.html">Mamba</a></h1>
+<div class="navbar">
+  <a href="#home">Home</a>
+  <a href="#news">News</a>
+  <div class="dropdown">
+    <button class="dropbtn">Dropdown
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <div class="header">
+        <h2>Mega Menu</h2>
       </div>
-
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
-          <li><a class="nav-link scrollto" href="#team">Team</a></li>
-          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
-    </div>
-  </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-  <section id="hero">
-    <div class="hero-container">
-      <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
-
-        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
-
-        <div class="carousel-inner" role="listbox">
-
-          <!-- Slide 1 -->
-          <div class="carousel-item active" style="background-image: url('assets/img/slide/banner1.jpg');">
-            <div class="carousel-container">
-              <div class="carousel-content container">
-                <h2 class="animate__animated animate__fadeInDown">Welcome to <span>Mamba</span></h2>
-                <p class="animate__animated animate__fadeInUp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nibh ipsum, lobortis ut massa at, feugiat laoreet sapien. Curabitur pellentesque bibendum nunc, in consequat ipsum ullamcorper vitae. Integer consequat tempor finibus.</p>
-                <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Slide 2 -->
-          <div class="carousel-item" style="background-image: url('assets/img/slide/banner2.jpg');">
-            <div class="carousel-container">
-              <div class="carousel-content container">
-                <h2 class="animate__animated animate__fadeInDown">Lorem Ipsum Dolor</h2>
-                <p class="animate__animated animate__fadeInUp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nibh ipsum, lobortis ut massa at, feugiat laoreet sapien. Curabitur pellentesque bibendum nunc, in consequat ipsum ullamcorper vitae. Integer consequat tempor finibus.</p>
-                <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Slide 3 -->
-          <div class="carousel-item" style="background-image: url('assets/img/slide/banner3.jpg');">
-            <div class="carousel-container">
-              <div class="carousel-content container">
-                <h2 class="animate__animated animate__fadeInDown">Sequi ea ut et est quaerat</h2>
-                <p class="animate__animated animate__fadeInUp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nibh ipsum, lobortis ut massa at, feugiat laoreet sapien. Curabitur pellentesque bibendum nunc, in consequat ipsum ullamcorper vitae. Integer consequat tempor finibus.</p>
-                <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
-              </div>
-            </div>
-          </div>
-
+      <div class="row">
+        <div class="column">
+          <h3>Category 1</h3>
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
         </div>
-
-        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
-        </a>
-        <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
-          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
-        </a>
-
+        <div class="column">
+          <h3>Category 2</h3>
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+        <div class="column">
+          <h3>Category 3</h3>
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
       </div>
     </div>
-  </section><!-- End Hero -->
-
-  <main id="main">
-
-
-	<div class="container">
-	<div class="row">
-  <div class="card mb-4" style="max-width:788px;">
-              <div class="row g-0">
-                <div class="col-md-5">
-				<div class="m-4">
- 
+  </div>
 </div>
-                  <img src="assets/img/1.jpg" class="img-fluid rounded-start" alt="...">
+<!--start searchbar-->
+<div class="container py-5">
+<div class="row">
+<h1>Welcome back! Let’s continue your search
+</h1>
+</div>
+</div>
+<div class="container mx-auto">
+  <div class="row mx-auto">
+
+    <div class="col-md-2 mx-auto">
+      Buy
+    </div>
+    <div class="col-md-2 mx-auto">
+      Rent
+    </div>
+    <div class="col-md-2 mx-auto">
+     Commercial
+    </div>
+  
+</div>
+</div>
+<section class="search-sec">
+    <div class="container">
+        <form action="#" method="post" novalidate="novalidate">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row">
+					 <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                            <select class="form-control search-slt">
+                                <option>Choose Rating</option>
+                            4 stars and up -->
+                                <option>
+                                  <a><p>&#9733; &#9733; &#9733; &#9733; &#x2606;</p></a href="#">
+                                </option>
+                             3 stars and up -->
+                                <option>
+                                    <a><p>&#9733; &#9733; &#9733; &#x2606; &#x2606;</p></a href="#">
+                                </option>
+                            
+                                <option>
+                                    <a><p>&#9733; &#9733; &#x2606; &#x2606; &#x2606;</p></a href="#">
+                                </option>
+                              1 star and up -->
+                                <option>
+                                    <a><p>&#9733; &#x2606; &#x2606; &#x2606; &#x2606;</p></a href="#">
+                                </option>
+                            </select>
+                        </div>
+                    
+						 <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                            <input type="text" class="form-control search-slt" placeholder="Enter Search">
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                            <select class="form-control search-slt">
+                                <option>Choose Rating</option>
+                             4 stars and up -->
+                                <option>
+                                  <a><p>&#9733; &#9733; &#9733; &#9733; &#x2606;</p></a href="#">
+                                </option>
+                            3 stars and up -->
+                                <option>
+                                    <a><p>&#9733; &#9733; &#9733; &#x2606; &#x2606;</p></a href="#">
+                                </option>
+                              2 stars and up -->
+                                <option>
+                                    <a><p>&#9733; &#9733; &#x2606; &#x2606; &#x2606;</p></a href="#">
+                                </option>
+                               1 star and up -->
+                                <option>
+                                    <a><p>&#9733; &#x2606; &#x2606; &#x2606; &#x2606;</p></a href="#">
+                                </option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                            <button type="button" class="btn btn-primary wrn-btn">Search</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-7">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                    <a href="#" class="mt-auto btn btn-primary  ">Read More</a>
-                  </div>
-                </div>
-              </div>
             </div>
-			<div class="card mb-4" style="max-width:788px;">
-              <div class="row g-0">
-                <div class="col-md-5">
-                  <img src="assets/img/2.jpg" class="img-fluid rounded-start" alt="...">
-                </div>
-                <div class="col-md-7">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                    <a href="#" class="mt-auto btn btn-primary  ">Read More</a>
-	
-                  </div>
-                </div>
-              </div>
-            </div>
-			<div class="card mb-4" style="max-width:788px;">
-              <div class="row g-0">
-                <div class="col-md-5">
-                  <img src="assets/img/4.jpg" class="img-fluid rounded-start" alt="...">
-                </div>
-                <div class="col-md-7">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                    <a href="#" class="mt-auto btn btn-primary  ">Read More</a>
-	
-                  </div>
-                </div>
-              </div>
-            </div>
-			<div class="card mb-4" style="max-width:788px;">
-              <div class="row g-0">
-                <div class="col-md-5">
-                  <img src="assets/img/4.jpg" class="img-fluid rounded-start" alt="...">
-                </div>
-                <div class="col-md-7">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                    <a href="#" class="mt-auto btn btn-primary  ">Read More</a>
-	
-                  </div>
-                </div>
-              </div>
-            </div>
+        </form>
+    </div>
+</section>
+  <main id="main">
 			</div>
 			</div>
 			<div class="container">
  <div class="row">
-   <div class="card">
-    <div class="card-horizontal">
-        <div class="img-square-wrapper">
-            <img class="" src="assets/img/8.jpg" alt="Card image cap">
-        </div>
-        <div class="card-body">
-            <h4 class="card-title">Card title</h4>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content
-			Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-			<a href="#" class="mt-auto btn btn-primary  ">Read More</a>
-			<a href="#" class="mt-auto btn btn-primary  ">Read More</a>
-        </div>
-    </div>
-  
+     
 </div>
-  <div class="card">
-    <div class="card-horizontal">
-        <div class="img-square-wrapper">
-            <img class="" src="assets/img/8.jpg" alt="Card image cap">
-        </div>
-        <div class="card-body">
-            <h4 class="card-title">Card title</h4>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content
-			Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-			<a href="#" class="mt-auto btn btn-primary  ">Read More</a>
-			<a href="#" class="mt-auto btn btn-primary  ">Read More</a>
-        </div>
-    </div>
+  
   
 </div>
   
+</div>
+</div>
+<div class="container">
+	<div class="row">
+<h2>Popular Owner Properties</h2>
 </div>
 </div>
     <!-- Topic Cards -->
@@ -245,8 +282,8 @@
                                     <img src="assets/img/6.jpg" alt="" />
                                 </div>
                                 <div class="text-container">
-                                    <h6>Title 01</h6>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                   100 sqft
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
                                 </div>
                             </div>
                         </div>
@@ -303,225 +340,284 @@
     </div>
 
 
-  
-   
-
-    <!-- ======= Our Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio section-bg">
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="section-title">
-          <h2>Our Portfolio</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
-
+  <!-- Topic Cards -->
+  <div id="cards_landscape_wrap-2">
+    <div class="container">
         <div class="row">
-          <div class="col-lg-12">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Card</li>
-              <li data-filter=".filter-web">Web</li>
-            </ul>
-          </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                <a href="">
+                    <div class="card-flyer">
+                        <div class="text-box">
+                            <div class="image-box">
+                                <img src="assets/img/6.jpg" alt="" />
+                            </div>
+                            <div class="text-container">
+                               100 sqft
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                <a href="">
+                    <div class="card-flyer">
+                        <div class="text-box">
+                            <div class="image-box">
+                                <img src="assets/img/7.jpeg" alt="" />
+                            </div>
+                            <div class="text-container">                                    
+                                <h6>Title 02</h6>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                <a href="">
+                    <div class="card-flyer">
+                        <div class="text-box">
+                            <div class="image-box">
+                                <img src="assets/img/8.jpg" alt="" />
+                            </div>
+
+                            <div class="text-container">
+                                <h6>Title 03</h6>
+                               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                <a href="">
+                    <div class="card-flyer">
+                        <div class="text-box">
+                            <div class="image-box">
+                                <img src="assets/img/9.jpg" alt="" />
+                            </div>
+                            <div class="text-container">
+                                <h6>Title 04</h6>
+                               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
         </div>
+    </div>
+</div>
 
-        <div class="row portfolio-container">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 1</h4>
-                <p>App</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bi bi-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Web 3</h4>
-                <p>Web</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bi bi-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 2</h4>
-                <p>App</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bi bi-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Card 2</h4>
-                <p>Card</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bi bi-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Web 2</h4>
-                <p>Web</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bi bi-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 3</h4>
-                <p>App</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bi bi-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Card 1</h4>
-                <p>Card</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bi bi-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Card 3</h4>
-                <p>Card</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bi bi-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Web 3</h4>
-                <p>Web</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bi bi-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Our Portfolio Section -->
-
-    <!-- ======= Contact Us Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Contact Us</h2>
-        </div>
-
+  <!-- Topic Cards -->
+  <div id="cards_landscape_wrap-2">
+    <div class="container">
         <div class="row">
-
-          <div class="col-lg-6 d-flex" data-aos="fade-up">
-            <div class="info-box">
-              <i class="bx bx-map"></i>
-              <h3>Our Address</h3>
-              <p>A108 Adam Street, New York, NY 535022</p>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                <a href="">
+                    <div class="card-flyer">
+                        <div class="text-box">
+                            <div class="image-box">
+                                <img src="assets/img/6.jpg" alt="" />
+                            </div>
+                            <div class="text-container">
+                               100 sqft
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
             </div>
-          </div>
-
-          <div class="col-lg-3 d-flex" data-aos="fade-up" data-aos-delay="100">
-            <div class="info-box">
-              <i class="bx bx-envelope"></i>
-              <h3>Email Us</h3>
-              <p>info@example.com<br>contact@example.com</p>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                <a href="">
+                    <div class="card-flyer">
+                        <div class="text-box">
+                            <div class="image-box">
+                                <img src="assets/img/7.jpeg" alt="" />
+                            </div>
+                            <div class="text-container">                                    
+                                <h6>Title 02</h6>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
             </div>
-          </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                <a href="">
+                    <div class="card-flyer">
+                        <div class="text-box">
+                            <div class="image-box">
+                                <img src="assets/img/8.jpg" alt="" />
+                            </div>
 
-          <div class="col-lg-3 d-flex" data-aos="fade-up" data-aos-delay="200">
-            <div class="info-box ">
-              <i class="bx bx-phone-call"></i>
-              <h3>Call Us</h3>
-              <p>+1 5589 55488 55<br>+1 6678 254445 41</p>
+                            <div class="text-container">
+                                <h6>Title 03</h6>
+                               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
             </div>
-          </div>
-
-          <div class="col-lg-12" data-aos="fade-up" data-aos-delay="300">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="col-lg-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                </div>
-                <div class="col-lg-6 form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                </div>
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-              </div>
-              <div class="form-group">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
-          </div>
-
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                <a href="">
+                    <div class="card-flyer">
+                        <div class="text-box">
+                            <div class="image-box">
+                                <img src="assets/img/9.jpg" alt="" />
+                            </div>
+                            <div class="text-container">
+                                <h6>Title 04</h6>
+                               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
         </div>
+    </div>
+</div>
 
-      </div>
-    </section><!-- End Contact Us Section -->
+
+  <!-- Topic Cards -->
+  <div id="cards_landscape_wrap-2">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                <a href="">
+                    <div class="card-flyer">
+                        <div class="text-box">
+                            <div class="image-box">
+                                <img src="assets/img/6.jpg" alt="" />
+                            </div>
+                            <div class="text-container">
+                               100 sqft
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                <a href="">
+                    <div class="card-flyer">
+                        <div class="text-box">
+                            <div class="image-box">
+                                <img src="assets/img/7.jpeg" alt="" />
+                            </div>
+                            <div class="text-container">                                    
+                                <h6>Title 02</h6>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                <a href="">
+                    <div class="card-flyer">
+                        <div class="text-box">
+                            <div class="image-box">
+                                <img src="assets/img/8.jpg" alt="" />
+                            </div>
+
+                            <div class="text-container">
+                                <h6>Title 03</h6>
+                               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                <a href="">
+                    <div class="card-flyer">
+                        <div class="text-box">
+                            <div class="image-box">
+                                <img src="assets/img/9.jpg" alt="" />
+                            </div>
+                            <div class="text-container">
+                                <h6>Title 04</h6>
+                               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+  <!-- Topic Cards -->
+  <div id="cards_landscape_wrap-2">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                <a href="">
+                    <div class="card-flyer">
+                        <div class="text-box">
+                            <div class="image-box">
+                                <img src="assets/img/6.jpg" alt="" />
+                            </div>
+                            <div class="text-container">
+                               100 sqft
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                <a href="">
+                    <div class="card-flyer">
+                        <div class="text-box">
+                            <div class="image-box">
+                                <img src="assets/img/7.jpeg" alt="" />
+                            </div>
+                            <div class="text-container">                                    
+                                <h6>Title 02</h6>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                <a href="">
+                    <div class="card-flyer">
+                        <div class="text-box">
+                            <div class="image-box">
+                                <img src="assets/img/8.jpg" alt="" />
+                            </div>
+
+                            <div class="text-container">
+                                <h6>Title 03</h6>
+                               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                <a href="">
+                    <div class="card-flyer">
+                        <div class="text-box">
+                            <div class="image-box">
+                                <img src="assets/img/9.jpg" alt="" />
+                            </div>
+                            <div class="text-container">
+                                <h6>Title 04</h6>
+                               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
 
   </main><!-- End #main -->
 
@@ -606,6 +702,7 @@
   <script src="assets/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
+
   <script src="assets/js/main.js"></script>
 
 </body>
